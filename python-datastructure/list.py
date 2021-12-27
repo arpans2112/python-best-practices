@@ -85,6 +85,23 @@ thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
 
+print("20"*20)
+thislist = ["apple", "banana", "cherry"]
+print()
+
+for i in zip(*thislist):
+    print (i)
+
+for i, s in enumerate(zip(*thislist)):
+    print(i,s)
+
+# in place rotation in python
+nums = [1,2,3,4,5,6]
+nums[:] = nums[-3:] + nums[:-3]
+print(nums)
+# output
+# [4, 5, 6, 1, 2, 3]
+
 
 
 
